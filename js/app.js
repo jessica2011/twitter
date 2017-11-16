@@ -3,25 +3,23 @@ var post = document.querySelector('.post-js');
 var viewCount = document.querySelector('.count-js');
 var twett = document.querySelector('.container-text-js'); 
 var message = ''; 
-var maxLetter = 140; 
+var maxLetter = 145; 
 
 
 post.addEventListener('keydown', validateLength);
 post.addEventListener('keyup', validateLength);
-button.removeEventListener('click', twittear);
-
+post.addEventListener('keyup',disabledBtn )
+button.addEventListener('click', twittear);
 
 
 function validateLength () {
      var numberLetters = post.value.length;
-     if(numberLetters > maxLetter) {
+     if(numberLetters>=maxLetter) {
          post.value = message ;
      }else {
-         message = post.value
+         message = post.value;
      }
-     viewCount.value = post.value.length;
-     button.addEventListener('click', twittear);
-
+     viewCount.value = numberLetters;
 }
 
 function twittear(event) { 
@@ -35,4 +33,11 @@ function twittear(event) {
     }
 }
 
+function disabledBtn () {
+    if (post.value.length == 0 || post.value.length>140){
+        button.disabled=true;
+    } else if (post.value.length > 0 ) {
+        button.disabled=false;
+    }        
+}
 

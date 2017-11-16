@@ -1,10 +1,9 @@
 var button = document.querySelector('.btn-js');
 var post = document.querySelector('.post-js');
 var viewCount = document.querySelector('.count-js');
-var twett = document.querySelector('.twett');
-//var text = document.querySelector('.container-text-js');
-var message = ''; //vacio
-var maxLetter = 140; //n
+var twett = document.querySelector('.container-text-js'); 
+var message = ''; 
+var maxLetter = 140; 
 
 
 post.addEventListener('keydown', validateLength);
@@ -25,15 +24,15 @@ function validateLength () {
 
 }
 
-function twittear() { 
-    twett.innerHTML = post.value;  
+function twittear(event) { 
+    //twett.innerHTML = post.value;  
+    if(post.value) {
+        var p = document.createElement('p');
+       
+        p.textContent = post.value;
+        twett.appendChild(p);
+        post.value = '';
+    }
 }
-
-// var p = document.createElement('p');
-
-// var contenido = document.createTextNode(twett);
-// messeger.appendChild(p);
-// p.appendChild(contenido);
-
 
 

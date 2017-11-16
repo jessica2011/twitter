@@ -7,45 +7,126 @@
 body {
     background-image: url('../assets/images/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    
+     
+    background-size: cover; 
 }
 
 header {
     width: 100%;
-    background-color: 	#87CEFA;
-    position: fixed;
-    
+    background-color: 	#87CEFA; 
+}
+
+.section-header {
+    width: 20%;
+    margin: 0 auto;
+}
+
+span {
+   color: white;
 }
 
 h1 {
-    margin: 30px 0;
+    padding: 20px 0;
     text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.section-principal {
+    width: 80%;
+    margin: 5px auto;
+    overflow: hidden;
 }
 
 .box-information {
-    width: 100%;
-    float: left;
+    width: 100%;  
     background-color: white;
-    margin-left: 20%;
+    padding: 30px 20px;
+    
+}
+
+.box-post{
+    width: 100%;
+    background-color: white;
+    
 }
 
 .container-one {
-    overflow: hidden;
-    width: 45%;
-    margin-top: 100px;
-    display: inline-block;
-}
-
-.box.post{
-    width: 100%;
-    float: right;
-    background-color: white;
+    width: 49%;
+    float: left;
 }
 
 .container-two {
-    overflow: hidden;
-    width: 45%;
-    display: inline-block;
-    margin-top: 100px;
+   width: 49%;
+    float: right;
+}
+
+.box-information h2 {
+    padding: 10px 0;
+}
+
+.box-information p {
+    line-height: 1.5;
+}
+
+.box-information .p-last {
+    color: red;
+    font-weight: bold;
+}
+
+form  .post {
+    width: 90%;
+    margin: 10px 5%;
+    border: none;
+    line-height: 1.5;
+    font-size: 20px; 
+    
+}
+
+form::after {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(214, 212, 212);
+}
+
+.box-btn-count {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    outline: hidden;
+}
+
+.btn {
+    
+    padding: 10px 30px;
+    background-color: rgb(214, 212, 212);
+    color: rgb(141, 141, 141);
+    border: none;
+    font-size: 15px; 
+    font-weight: bold;
+    
+}
+
+.count {
+    float: right;
+    width: 25px ;
+    border: none;
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: 0 none;
+}
+
+.container-tree  p{
+    word-wrap: break-word; 
+   
+    background: white;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 3px;
+    padding: 0 15px;
+    
 }

@@ -7,7 +7,7 @@
 body {
     background-image: url('../assets/images/fondo.jpg');
     background-repeat: no-repeat;
-     
+    
     background-size: cover; 
 }
 
@@ -121,6 +121,8 @@ form::after {
     float: right;
     width: 25px ;
     border: none;
+    color: blue;
+    font-weight: bold;
 }
 
 textarea:focus, input:focus, button:focus {
@@ -130,9 +132,23 @@ textarea:focus, input:focus, button:focus {
 .container-tree  p{
     word-wrap: break-word; 
     background: white;
-    width: 80%;
+    width: 50%;
     margin: 10px auto;
     border-radius: 3px;
-    padding: 0 15px;
+    padding: 10px 15px;
+
     
 }
+
+textarea{  
+    overflow:hidden;
+    margin:50px auto;
+    display:block;
+    resize: none;
+    height: auto;
+    padding: 0;
+   
+}
+
+
+
